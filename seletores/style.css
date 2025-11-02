@@ -1,0 +1,100 @@
+/*1 - Seletores básicos */
+
+p { 
+    color: blue; 
+}
+
+/* 2 - Classe (.nome): seleciona elementos que possuem uma classe específica. */
+
+.destaque {
+    color: red;
+    font-weight: bold;
+}
+
+/* 3 - ID (#nome): seleciona um único elemento com o atributo id. */
+
+#especial {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+
+/* 4 - Seletores de agrupamento
+Permitem aplicar a mesma regra a vários seletores: */
+
+h1, h2, h3 {
+    font-family: Arial, sans-serif;
+    color: green;
+}
+
+/* 5 -  Seletores de descendência e relacionamento Descendente:*/
+
+div p {
+    color: purple;
+    font-weight: bold;
+}
+
+
+/* 6 - Filho direto (>): */
+
+div > p {
+    color: orange;
+    font-style: italic;
+}
+
+
+/* 7 - Adjacente (+): Estiliza o premiro <p> logo a pós a tag <h2> */
+
+h2 + p {
+    text-decoration: underline;
+
+}
+
+
+/* 8 - Irmão geral (~):*/
+
+h1 ~ p {
+    background-color: yellow;
+    width: max-content;
+}
+
+
+/* 9 -  Seletores baseados em atributos HTML: usar colchetes para passar atributo*/
+
+a[target="_blank"] {
+    color: magenta;
+    font-weight: bold;
+}
+input[type="text"]{
+    border: 2px solid hotpink;
+}
+
+
+/* 10. Pseudo-classes
+Selecionam estados ou condições especiais: */
+
+a:hover {
+    color: darkorange;
+}
+p:first-child {
+    font-size: 25px;
+    font-weight: bold;
+}
+input:last-child {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/* 11. Pseudo-elementos
+Estilizam partes específicas de um elemento: */
+
+p::first-letter {
+    font-size: 200%;
+    color: teal;
+}
+
+p::first-line {
+    font-weight: bold;
+    text-transform: uppercase;
+}
