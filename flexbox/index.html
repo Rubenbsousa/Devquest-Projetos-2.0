@@ -15,6 +15,13 @@
         <li><strong>Main Axis:</strong> The primary axis along which flex items are laid out. It can be horizontal or vertical depending on the flex-direction property.</li>
         <li><strong>Cross Axis:</strong> The axis perpendicular to the main axis.</li>
     </ul>
+    <h2>Example</h2>
+    <div style="display: flex; justify-content: center; align-items: center; height: 200px; border: 1px solid black;">
+        <div style="width: 50px; height: 50px; background-color: red;"></div>
+        <div style="width: 50px; height: 50px; background-color: green;"></div>
+        <div style="width: 50px; height: 50px; background-color: blue;"></div>
+    </div>
+    <p>This example creates a flex container with three colored boxes centered both horizontally and vertically.</p>
     <h2>Common Flexbox Properties</h2>
     <h3>For Flex Container:</h3>
     <ul>
@@ -22,22 +29,104 @@
         <li><code>flex-direction</code>: Specifies the direction of the main axis (row, row-reverse, column, column-reverse).</li>
         <li><code>justify-content</code>: Aligns flex items along the main axis (flex-start, flex-end, center, space-between, space-around).</li>
         <li><code>align-items</code>: Aligns flex items along the cross axis (flex-start, flex-end, center, stretch, baseline).</li>
+        <li><code>align-content</code>: Aligns two or more lines along the cross axis (flex-start, flex-end, center, space-between, space-around).</li>
         <li><code>flex-wrap</code>: Controls whether flex items wrap onto multiple lines (nowrap, wrap, wrap-reverse).</li>
     </ul>
+
+    
+
+    <div class="flex-container">
+        <div class="flex-direction">
+            <div class="row">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+            </div>
+            <div class="row-reverse">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+            </div>
+            <div class="column">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+            </div>
+            <div class="column-reverse">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+            </div>
+        </div>
+        <div class="justify-content">
+            <div>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+            </div>
+            <div class="flex-start">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+            </div>
+            <div class="flex-end">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+            </div>
+            <div class="center">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+            </div>
+            <div class="space-between">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+            </div>
+            <div class="space-around">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+            </div>
+        </div>
+        <div class="align-items">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+        </div>
+        <div class="align-content">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+        </div>
+        <div class="flex-wrap">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+    </div>
+
     <h3>For Flex Items:</h3>
     <ul>
         <li><code>flex-grow</code>: Defines the ability for a flex item to grow if necessary.</li>
         <li><code>flex-shrink</code>: Defines the ability for a flex item to shrink if necessary.</li>
         <li><code>flex-basis</code>: Specifies the initial size of a flex item before any growing or shrinking.</li>
         <li><code>align-self</code>: Allows the default alignment (or the one specified by align-items) to be overridden for individual flex items.</li>
-    </ul>
-    <h2>Example</h2>
-    <pre><code>&lt;div style="display: flex; justify-content: center; align-items: center; height: 200px; border: 1px solid black;"&gt;
-    &lt;div style="width: 50px; height: 50px; background-color: red;"&gt;&lt;/div&gt;
-    &lt;div style="width: 50px; height: 50px; background-color: green;"&gt;&lt;/div&gt;
-    &lt;div style="width: 50px; height: 50px; background-color: blue;"&gt;&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-    <p>This example creates a flex container with three colored boxes centered both horizontally and vertically.</p>
-    
+    </ul> 
 </body>
 </html>
