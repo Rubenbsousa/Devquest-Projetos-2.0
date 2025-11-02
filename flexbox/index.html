@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+</head>
+<body>
+    <h1>Flexbox</h1>
+    <p>Flexbox is a CSS layout module that makes it easier to design flexible responsive layout structures without using float or positioning.</p>
+    <h2>Basic Concepts</h2>
+    <ul>
+        <li><strong>Flex Container:</strong> The parent element that holds the flex items. It is defined by setting the display property to <code>flex</code> or <code>inline-flex</code>.</li>
+        <li><strong>Flex Items:</strong> The child elements inside a flex container.</li>
+        <li><strong>Main Axis:</strong> The primary axis along which flex items are laid out. It can be horizontal or vertical depending on the flex-direction property.</li>
+        <li><strong>Cross Axis:</strong> The axis perpendicular to the main axis.</li>
+    </ul>
+    <h2>Common Flexbox Properties</h2>
+    <h3>For Flex Container:</h3>
+    <ul>
+        <li><code>display</code>: Defines a flex container (<code>flex</code> or <code>inline-flex</code>).</li>
+        <li><code>flex-direction</code>: Specifies the direction of the main axis (row, row-reverse, column, column-reverse).</li>
+        <li><code>justify-content</code>: Aligns flex items along the main axis (flex-start, flex-end, center, space-between, space-around).</li>
+        <li><code>align-items</code>: Aligns flex items along the cross axis (flex-start, flex-end, center, stretch, baseline).</li>
+        <li><code>flex-wrap</code>: Controls whether flex items wrap onto multiple lines (nowrap, wrap, wrap-reverse).</li>
+    </ul>
+    <h3>For Flex Items:</h3>
+    <ul>
+        <li><code>flex-grow</code>: Defines the ability for a flex item to grow if necessary.</li>
+        <li><code>flex-shrink</code>: Defines the ability for a flex item to shrink if necessary.</li>
+        <li><code>flex-basis</code>: Specifies the initial size of a flex item before any growing or shrinking.</li>
+        <li><code>align-self</code>: Allows the default alignment (or the one specified by align-items) to be overridden for individual flex items.</li>
+    </ul>
+    <h2>Example</h2>
+    <pre><code>&lt;div style="display: flex; justify-content: center; align-items: center; height: 200px; border: 1px solid black;"&gt;
+    &lt;div style="width: 50px; height: 50px; background-color: red;"&gt;&lt;/div&gt;
+    &lt;div style="width: 50px; height: 50px; background-color: green;"&gt;&lt;/div&gt;
+    &lt;div style="width: 50px; height: 50px; background-color: blue;"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    <p>This example creates a flex container with three colored boxes centered both horizontally and vertically.</p>
+    
+</body>
+</html>
