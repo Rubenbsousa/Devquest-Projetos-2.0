@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,12 +34,74 @@
     </ul>
 
     <h4>Flex-direciton</h4>
-    <p>The <code>flex-direction</code> property defines the direction in which the flex items are placed in the flex container. It can take the following values:</p>
-    <ul>
-        <li><code>row</code>: Items are placed in a row, from left to right.</li>
-        <li><code>row-reverse</code>: Items are placed in a row, from right to left.</li>
-        <li><code>column</code>: Items are placed in a column, from top to bottom.</li>
-        <li><code>column-reverse</code>: Items are placed in a column, from bottom to top.</li>
+    
+    <code>flex-direction:row</code>
+    <div style="display: flex; flex-direction: row; border: 1px solid black; margin-bottom: 10px; padding: 5px;">
+        <div style="width: 50px; height: 50px; background-color: red; margin-right: 5px;">1</div>
+        <div style="width: 50px; height: 50px; background-color: green; margin-right: 5px;">2</div>
+        <div style="width: 50px; height: 50px; background-color: blue;">3</div>
+    </div>
+
+    <code>Flex-direciton:row-reverse</code>
+    
+    <div style="display: flex; flex-direction: row-reverse; border: 1px solid black; margin-bottom: 10px; padding: 5px;">
+        <div style="width: 50px; height: 50px; background-color: red; margin-left: 5px;">1</div>
+        <div style="width: 50px; height: 50px; background-color: green; margin-left: 5px;">2</div>
+        <div style="width: 50px; height: 50px; background-color: blue;">3</div>
+    </div>
+
+    <code>flex-direction:column</code>
+
+    <div style="display: flex; flex-direction: column; border: 1px solid black; margin-bottom: 10px; padding: 5px; height: 170px;">
+        <div style="width: 50px; height: 50px; background-color: red; margin-bottom: 5px;">1</div>
+        <div style="width: 50px; height: 50px; background-color: green; margin-bottom: 5px;">2</div>
+        <div style="width: 50px; height: 50px; background-color: blue;">3</div>
+    </div>
+    
+    <code>flex-direction:column-reverse</code>
+    
+    <div style="display: flex; flex-direction: column-reverse; border: 1px solid black; margin-bottom: 10px; padding: 5px;">
+        <div style="width: 50px; height: 50px; background-color: red; margin-top: 5px;">1</div>
+        <div style="width: 50px; height: 50px; background-color: green; margin-top: 5px;">2</div>
+        <div style="width: 50px; height: 50px;background-color: blue;">3</div>
+    </div>
+
+    <h3>justify-content</h3>
+
+    <code>justify-content: flex-start</code>
+    <div style="display: flex; justify-content: flex-start; border: 1px solid black; margin-bottom: 10px; padding: 5px;">
+        <div style="width: 50px; height: 50px; background-color: red; margin-right: 5px;">1</div>
+        <div style="width: 50px; height: 50px; background-color: green; margin-right: 5px;">2</div>
+        <div style="width: 50px; height: 50px; background-color: blue;">3</div>
+    </div>
+
+    <code>justify-content: flex-end</code>
+    <div style="display: flex; justify-content: flex-end; border: 1px solid black; margin-bottom: 10px; padding: 5px;">
+        <div style="width: 50px; height: 50px; background-color: red; margin-left: 5px;">1</div>
+        <div style="width: 50px; height: 50px; background-color: green; margin-left: 5px;">2</div>
+        <div style="width: 50px; height: 50px; background-color: blue;">3</div>
+    </div>
+
+    <code>justify-content: center</code>
+    <div style="display: flex; justify-content: center; border: 1px solid black; margin-bottom: 10px; padding: 5px;">
+        <div style="width: 50px; height: 50px; background-color: red; margin-right: 5px;">1</div>
+        <div style="width: 50px; height: 50px; background-color: green; margin-right: 5px;">2</div>
+        <div style="width: 50px; height: 50px; background-color: blue;">3</div>
+    </div>
+
+    <code>justify-content: space-between</code>
+    <div style="display: flex; justify-content: space-between; border: 1px solid black; margin-bottom: 10px; padding: 5px;">
+        <div style="width: 50px; height: 50px; background-color: red;">1</div>
+        <div style="width: 50px; height: 50px; background-color: green;">2</div>
+        <div style="width: 50px; height: 50px; background-color: blue;">3</div>
+    </div>
+    
+    <code>justify-content: space-around</code>
+    <div style="display: flex; justify-content: space-around; border: 1px solid black; margin-bottom: 10px; padding: 5px;">
+        <div style="width: 50px; height: 50px; background-color: red;">1</div>
+        <div style="width: 50px; height: 50px; background-color: green;">2</div>
+        <div style="width: 50px; height: 50px; background-color: blue;">3</div>
+    </div>
 
     <h3>For Flex Items:</h3>
     <ul>
